@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".VideoUploadActivity" >
+    
+    <!-- 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/upload_fs_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/upload_camera_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/upload_youtube_button" />-->
+
+<!--     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/corners"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        android:paddingTop="5dp" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="20dp"
+	            android:src="@drawable/upload_fs_button" />
+	
+	        <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dp"
+	            android:onClick="onFSSelected"
+	            android:text="С телефона"
+	            android:textColor="@color/White" />
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/corners"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        android:paddingTop="5dp" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="20dp"
+	            android:src="@drawable/upload_camera_button" />
+	
+	        <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center|center_horizontal"
+	            android:onClick="onCameraClick"
+	            android:text="С камеры"
+	            android:textColor="@color/White" />
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/corners"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        android:paddingTop="5dp" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="20dp"
+	            android:src="@drawable/upload_youtube_button" />
+	
+	        <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="onYoutubeClick"
+	            android:text="С YouTube"
+	            android:textColor="@color/White" />
+
+	    </LinearLayout>
+	</LinearLayout>-->
+	
+	<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginRight="10dp"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:src="@drawable/upload_fs_button"
+	            android:onClick="onFSSelected" />
+	
+	        <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:text="С телефона" />
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="10dp"
+	        android:gravity="center_vertical"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:src="@drawable/upload_camera_button"
+	            android:onClick="onCameraClick" />
+	
+	        <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:text="С камеры" />
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:src="@drawable/upload_youtube_button"
+	            android:onClick="onYoutubeClick" />
+	
+	        <TextView
+	            android:id="@+id/button1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:text="С YouTube" />
+
+	    </LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

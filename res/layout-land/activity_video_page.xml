@@ -1,0 +1,52 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/VideoFrameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:background="#000000" >
+
+	 <com.example.vcmobile.VCVideoView
+	     android:id="@+id/videoView1"
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:layout_gravity="center" />
+	 
+	 <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_height="match_parent" />
+	 
+	 <ImageView
+        android:id="@+id/playImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:longClickable="false"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@drawable/play" />
+	 
+	 <TextView
+	     android:id="@+id/videoErrorTextView"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:text="Ошибка воспроизведения."
+	     android:textColor="@color/White"
+	     android:textSize="17sp"
+	     android:visibility="gone" />
+	 
+	 <ImageView
+	        android:id="@+id/videoReplayImageView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:scaleType="center"
+	        android:src="@drawable/repeat_video_white"
+	        android:background="#77000000"
+	        android:visibility="gone" />
+
+</FrameLayout>

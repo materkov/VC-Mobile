@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vcmobile"
+    android:versionCode="8"
+    android:versionName="1.7" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo64"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        <provider
+            android:name="com.example.vcmobile.core.SuggestionProvider"
+            android:authorities="com.example.vcmobile.core.SuggestionProvider" >
+        </provider>
+
+        <activity
+            android:name="com.example.vcmobile.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.AuthActivity"
+            android:label="@string/title_activity_auth" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.VideoPageActivity"
+            android:label="@string/title_activity_video_page" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.VideoListActivity"
+            android:label="@string/title_activity_video_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.PlayerFullscreenActivity"
+            android:label="@string/title_activity_player_fullscreen" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.DownloadsActivity"
+            android:label="@string/title_activity_downloads" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.VideoUploadActivity"
+            android:label="@string/title_activity_video_upload" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.FileSelectActivity"
+            android:label="@string/title_activity_file_select" >
+        </activity>
+
+        <service android:name="com.example.vcmobile.core.UploadService" >
+        </service>
+        <service android:name="com.example.vcmobile.core.DownloadService" >
+        </service>
+
+        <activity
+            android:name="com.example.vcmobile.YouTubeUploadActivity"
+            android:label="@string/title_activity_you_tube_upload" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.VideoEditActivity"
+            android:label="@string/title_activity_video_edit" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.SendEmailActivity"
+            android:label="@string/title_activity_send_email" >
+        </activity>
+        <activity
+            android:name="com.example.vcmobile.VideoFilterActivity"
+            android:label="@string/title_activity_video_filter" >
+        </activity>
+    </application>
+
+</manifest>
